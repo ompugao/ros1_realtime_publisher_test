@@ -7,3 +7,6 @@ link_directories(${roscpp_LIBRARY_DIRS} ${std_msgs_LIBRARY_DIRS} ${realtime_tool
 
 add_executable(publishtest publishtest.cpp)
 target_link_libraries(publishtest ${roscpp_LIBRARIES} ${std_msgs_LIBRARIES} ${realtime_tools_LIBRARIES})
+
+add_executable(subscribetest subscribetest.cpp)
+target_link_libraries(subscribetest ${roscpp_LIBRARIES} ${std_msgs_LIBRARIES})
